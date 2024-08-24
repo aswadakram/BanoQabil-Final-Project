@@ -17,9 +17,10 @@ def write_update():
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M")
 
     file = open("diary.txt", "a")
-    file.write(timestamp)
-    file.write("\n")
     file.write(update)
+    file.write("\n")
+    file.write(timestamp)
+    
     file.write("\n\n")
 
     file.close()
